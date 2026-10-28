@@ -1,57 +1,307 @@
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Personality Quiz</title>
+
+    <title>What Kind of Student Are You?</title>
+
     <link rel="icon" type="image/x-icon" href="/img/ideas.png">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
-    <link rel="stylesheet" href ="./css/style.css">
+
+    <!-- Bootstrap CSS -->
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7"
+        crossorigin="anonymous"
+    >
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+
 </head>
+
 <body>
-    <h1 class="text-center mt-4">YOUR QUIZ TITLE HERE</h1>
-    
-    <!-- Start quiz element -->
+
+    <!-- Quiz Heading -->
+
+    <div class="container text-center mt-5">
+
+        <h1>
+            What Kind of Student Are You? 📚
+        </h1>
+
+        <p class="lead">
+            Answer these 4 questions to discover your student personality!
+        </p>
+
+    </div>
+
+
+    <!-- Start Quiz -->
+
     <div class="container d-flex justify-content-center" id="question-1">
-      <div class="card my-4 p-4 question-block" style="width: 75%;">
-        <h4 class="mb-3">YOUR QUIZ QUESTION HERE</h4>
-        <div class="row g-2">
-          <div class="col-6">
-            <button class="btn btn-outline-primary w-100 answer-btn" data-answer="A">ANSWER CHOICE A</button>
-          </div>
-          <div class="col-6">
-            <button class="btn btn-outline-primary w-100 answer-btn" data-answer="B">ANSWER CHOICE B</button>
-          </div>
-          <div class="col-6">
-            <button class="btn btn-outline-primary w-100 answer-btn" data-answer="C">ANSWER CHOICE C</button>
-          </div>
-          <div class="col-6">
-            <button class="btn btn-outline-primary w-100 answer-btn" data-answer="D">ANSWER CHOICE D</button>
-          </div>
+
+        <div class="card my-4 p-4 question-block" style="width: 75%;">
+
+            <h4 class="mb-3">
+                1. How do you prepare for an exam?
+            </h4>
+
+            <div class="row g-2">
+
+                <div class="col-6">
+                    <button
+                        class="btn btn-outline-primary w-100 answer-btn"
+                        data-answer="A"
+                    >
+                        Study weeks ahead
+                    </button>
+                </div>
+
+                <div class="col-6">
+                    <button
+                        class="btn btn-outline-primary w-100 answer-btn"
+                        data-answer="B"
+                    >
+                        Cram the night before
+                    </button>
+                </div>
+
+                <div class="col-6">
+                    <button
+                        class="btn btn-outline-primary w-100 answer-btn"
+                        data-answer="C"
+                    >
+                        Ask a friend for help
+                    </button>
+                </div>
+
+                <div class="col-6">
+                    <button
+                        class="btn btn-outline-primary w-100 answer-btn"
+                        data-answer="D"
+                    >
+                        Hope for the best
+                    </button>
+                </div>
+
+            </div>
+
         </div>
-      </div>
+
     </div>
 
-    
-    
-    <!-- End quiz element -->
 
-    <!-- Add more quiz elements here -->
+    <!-- Question 2 -->
 
+    <div class="container d-flex justify-content-center" id="question-2">
 
+        <div class="card my-4 p-4 question-block" style="width: 75%;">
 
-    <div class="container d-flex justify-content-center">
-      <button id="show-result" class="btn btn-success my-4">Show Results</button>
-    </div>    
-    <!-- Output the result here -->
-    <div class="container d-flex justify-content-center">
-      <div id="result-container" class="card p-4 mb-4" style="width: 75%; display: none;">
-        <h3>Your Result:</h3>
-        <p id="result-text"></p>
-      </div>
+            <h4 class="mb-3">
+                2. What's your favorite place to study?
+            </h4>
+
+            <div class="row g-2">
+
+                <div class="col-6">
+                    <button
+                        class="btn btn-outline-primary w-100 answer-btn"
+                        data-answer="A"
+                    >
+                        Library
+                    </button>
+                </div>
+
+                <div class="col-6">
+                    <button
+                        class="btn btn-outline-primary w-100 answer-btn"
+                        data-answer="B"
+                    >
+                        Coffee shop
+                    </button>
+                </div>
+
+                <div class="col-6">
+                    <button
+                        class="btn btn-outline-primary w-100 answer-btn"
+                        data-answer="C"
+                    >
+                        My bedroom
+                    </button>
+                </div>
+
+                <div class="col-6">
+                    <button
+                        class="btn btn-outline-primary w-100 answer-btn"
+                        data-answer="D"
+                    >
+                        Anywhere with Wi-Fi
+                    </button>
+                </div>
+
+            </div>
+
+        </div>
+
     </div>
-    
-    <!-- Connect to your script file here -->
-     <script src = "./js/script.js"></script>
+
+
+    <!-- Question 3 -->
+
+    <div class="container d-flex justify-content-center" id="question-3">
+
+        <div class="card my-4 p-4 question-block" style="width: 75%;">
+
+            <h4 class="mb-3">
+                3. What do you do during a group project?
+            </h4>
+
+            <div class="row g-2">
+
+                <div class="col-6">
+                    <button
+                        class="btn btn-outline-primary w-100 answer-btn"
+                        data-answer="A"
+                    >
+                        Organize everything
+                    </button>
+                </div>
+
+                <div class="col-6">
+                    <button
+                        class="btn btn-outline-primary w-100 answer-btn"
+                        data-answer="B"
+                    >
+                        Do the creative work
+                    </button>
+                </div>
+
+                <div class="col-6">
+                    <button
+                        class="btn btn-outline-primary w-100 answer-btn"
+                        data-answer="C"
+                    >
+                        Help everyone
+                    </button>
+                </div>
+
+                <div class="col-6">
+                    <button
+                        class="btn btn-outline-primary w-100 answer-btn"
+                        data-answer="D"
+                    >
+                        Wait until the deadline
+                    </button>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- Question 4 -->
+
+    <div class="container d-flex justify-content-center" id="question-4">
+
+        <div class="card my-4 p-4 question-block" style="width: 75%;">
+
+            <h4 class="mb-3">
+                4. How do you spend your free time?
+            </h4>
+
+            <div class="row g-2">
+
+                <div class="col-6">
+                    <button
+                        class="btn btn-outline-primary w-100 answer-btn"
+                        data-answer="A"
+                    >
+                        Read or study
+                    </button>
+                </div>
+
+                <div class="col-6">
+                    <button
+                        class="btn btn-outline-primary w-100 answer-btn"
+                        data-answer="B"
+                    >
+                        Hang out with friends
+                    </button>
+                </div>
+
+                <div class="col-6">
+                    <button
+                        class="btn btn-outline-primary w-100 answer-btn"
+                        data-answer="C"
+                    >
+                        Watch movies
+                    </button>
+                </div>
+
+                <div class="col-6">
+                    <button
+                        class="btn btn-outline-primary w-100 answer-btn"
+                        data-answer="D"
+                    >
+                        Sleep
+                    </button>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- End Quiz -->
+
+
+    <!-- Show Results Button -->
+
+    <div class="container d-flex justify-content-center">
+
+        <button
+            id="show-result"
+            class="btn btn-success my-4"
+        >
+            Discover My Personality ✨
+        </button>
+
+    </div>
+
+
+    <!-- Output the Result Here -->
+
+    <div class="container d-flex justify-content-center">
+
+        <div
+            id="result-container"
+            class="card p-4 mb-4 text-center"
+            style="width: 75%; display: none;"
+            aria-live="polite"
+        >
+
+            <h3>Your Result:</h3>
+
+            <p id="result-text"></p>
+
+        </div>
+
+    </div>
+
+
+    <!-- Connect JavaScript -->
+
+    <script src="./js/script.js"></script>
+
 </body>
+
 </html>
