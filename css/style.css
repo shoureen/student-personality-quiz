@@ -1,6 +1,113 @@
-.selected {
-    background-color: #007bff;
-    color: white;
-    border-color: #007bff;
+
+/* General Page Styling */
+
+body {
+    background-color: #fff5f8;
+    font-family: Arial, sans-serif;
+    color: #4a3444;
 }
-  
+
+
+/* Quiz Heading */
+
+h1 {
+    color: #7b3f61;
+    font-weight: bold;
+    font-size: 36px;
+}
+
+.lead {
+    color: #806b78;
+    margin-top: 15px;
+}
+
+
+/* Question Cards */
+
+.question-block {
+    border: none;
+    border-radius: 15px;
+    background-color: white;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.question-block h4 {
+    color: #7b3f61;
+    font-weight: bold;
+}
+
+
+/* Answer Buttons */
+
+.answer-btn {
+    padding: 12px;
+    border-radius: 10px;
+    transition: 0.2s;
+}
+
+
+/* Hover Effect */
+
+.answer-btn:hover {
+    background-color: #fce4ef;
+    border-color: #d88bb0;
+    color: #7b3f61;
+}
+
+
+/* Selected Answer */
+
+.answer-btn.selected {
+    background-color: #d88bb0;
+    border-color: #c06b91;
+    color: white;
+}
+
+
+/* Show Results Button */
+
+#show-result {
+    background-color: #c06b91;
+    border: none;
+    border-radius: 30px;
+    padding: 14px 30px;
+    font-weight: bold;
+}
+
+#show-result:hover {
+    background-color: #a94e78;
+}
+
+
+/* Result Container */
+
+#result-container {
+    background-color: white;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+#result-container h2 {
+    color: #7b3f61;
+    font-weight: bold;
+}
+
+#result-container p {
+    line-height: 1.6;
+}
+
+
+/* Mobile Responsive Styling */
+
+@media (max-width: 576px) {
+
+    h1 {
+        font-size: 28px;
+    }
+
+    .question-block {
+        width: 100% !important;
+    }
+
+}
